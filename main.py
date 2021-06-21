@@ -15,8 +15,8 @@ dataset_name='CIFAR10'
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
-train_dataset,test_dataset=get_dataset('CIFAR10','/data/zhuoyun/dataset')
-SSL_train_dataset,SSL_test_dataset=get_dataset('CIFAR10_SSL','/data/zhuoyun/dataset')
+train_dataset,test_dataset=get_dataset('CIFAR10','/data/dataset')
+SSL_train_dataset,SSL_test_dataset=get_dataset('CIFAR10_SSL','/data/dataset')
 
 model=SimSiamModel(resnet18()).to(device)
 
