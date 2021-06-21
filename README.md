@@ -6,6 +6,7 @@ A PyTorch implementation for the paper [**Exploring Simple Siamese Representatio
 
 # Run
 
+`mkdir model`
 `nohup python3.6 -u main.py&`
 
 
