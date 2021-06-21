@@ -20,8 +20,6 @@ SSL_train_dataset,SSL_test_dataset=get_dataset('CIFAR10_SSL','/data/zhuoyun/data
 
 model=SimSiamModel(resnet18()).to(device)
 
-numclass=10
-
 with open(yamlPath,'rb') as f:
     data = list(yaml.safe_load_all(f))
     train_config=data[0]['train']
