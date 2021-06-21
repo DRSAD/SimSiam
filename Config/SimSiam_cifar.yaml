@@ -1,0 +1,23 @@
+train:
+  warmup_epochs: 10
+  warmup_lr: 0
+
+  batch_size: 512
+  weight_decay: 0.0005
+  momentum: 0.9
+  base_lr: 0.03
+  final_lr: 0
+  epochs: 800
+
+eval:
+  batch_size: 256
+  weight_decay: 0
+  momentum: 0.9
+  base_lr: 30
+  epochs: 100
+
+  warmup_epochs: 0
+  warmup_lr: 0
+  numclass: 10
+
+  linear_classifier_input_dim: 512
